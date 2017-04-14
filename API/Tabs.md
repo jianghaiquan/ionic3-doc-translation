@@ -26,3 +26,90 @@ tabs 的位置与基于风格（android、ios）的内容变化有关。tabs 在
       <ion-tab [root]="tab3Root"></ion-tab>
     </ion-tabs>
 `tab1Root`，`tab2Root`，`tab3Root` 是每一个页面：
+
+    @Component({
+      templateUrl: 'build/pages/tabs/tabs.html'
+    })
+    export class TabsPage {
+      // this tells the tabs component which Pages
+      // should be each tab's root Page
+      tab1Root = Page1;
+      tab2Root = Page2;
+      tab3Root = Page3;
+      
+      constructor() {
+
+      }
+    }
+在 Tabs 页面中，默认的第一个 tab 将在被选中（在页面导航的最上面）。我们可以通过 `<ion-tabs>` 元素上的 `selectedIndex` 属性来改变这个默认的选项：
+
+    <ion-tabs selectedIndex="2">
+      <ion-tab [root]="tab1Root"></ion-tab>
+      <ion-tab [root]="tab2Root"></ion-tab>
+      <ion-tab [root]="tab3Root"></ion-tab>
+    </ion-tabs>
+
+因为索引从 0 开始，所以上面的代码将会选择第 3 个 tab 作为根页面。如果你向动态地改变它，你可以使用[属性绑定](https://angular.io/docs/ts/latest/guide/template-syntax.html#!#property-binding)。
+
+或者，你可以获得 `Tabs` 的实例然后调用 `select()` 方法。这就需要 `<ion-tabs>` 元素要有一个 `id` 。例如，设置 `id` 的值为 `myTabs`：
+
+    <ion-tabs #myTabs>
+      <ion-tab [root]="tab1Root"></ion-tab>
+      <ion-tab [root]="tab2Root"></ion-tab>
+      <ion-tab [root]="tab3Root"></ion-tab>
+    </ion-tabs>
+然后在你的 class 中，你可以取得 `Tabs` 实例，然后调用 `select()` 方法，将选项卡的索引作为参数传递进去。
+在这里，我们通过 ViewChild 取得 tabs：
+
+    export class TabsPage {
+      @ViewChild('myTabs') tabRef: Tabs;
+      
+      ionViewDidEnter() {
+        this.tabRef.select(2);
+      }
+    }
+
+你也可以在父视图（tabs）中使用 `NaController` 的实例，然后调用 `select()` 方法来切换子组件（tab）。例如，如果你有一个 `TabsPage` 组件，你可以调用下面的方法来从任何子组件切换到 `TabsRoot3`：
+
+    switchTabs() {
+      this.navCtrl.parent.select(2);
+    }
+
+
+### 实例的成员函数 ###
+`getByIndex(index)`
+
+| 参数 | 类型 | 详述 |
+|-----|------|-----|
+| index | `number`| 你想获得的tab的索引|
+Returns： `Tab`
+
+返回？
+
+`getSelected()`
+
+Returns： `Tab`
+
+返回当前被选中的 tab
+
+`ngOnDestroy()`
+
+`previousTab(trimHistory)`
+
+获得当前被选中的 Tab，并且这个 Tab 不是被禁用或者隐藏的。
+
+| 参数 | 类型 | 详述 |
+|-----|------|-----|
+| trimHistory | `boolean`| ？ |
+Returns: `Tab`
+
+`select(tabOrIndex)`
+
+| 参数 | 类型 | 详述 |
+|-----|------|-----|
+| tabOrIndex | `number or Tab`| ？ |
+
+`viewCtrl`
+
+### 输入属性 ###
+
