@@ -1,2 +1,2 @@
-###zytÕıÔÚ·­Òë£º###
-componnentµÄÇ°10¸öĞ¡ÕÂ½Ú£¨overviewÖÁgesture£©¡£
+###zytæ­£åœ¨ç¿»è¯‘ï¼š###
+componnentçš„å‰10ä¸ªå°ç« èŠ‚ï¼ˆoverviewè‡³gestureï¼‰ã€‚

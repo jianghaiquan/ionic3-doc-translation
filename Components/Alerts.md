@@ -1,14 +1,14 @@
 Alerts
-���Ҫ���û�ѡ��һ���������ߴ�һ�в�����Alerts��һ�ַǳ��õķ�ʽ��������Ϊ�û��ṩ��Ҫ����Ϣ������Ҫ���û���һ��ѡ�񣨻��߶�ѡ����
+如果要让用户选择一个操作或者从一列操作，Alerts是一种非常好的方式。它可以为用户提供重要的信息，或者要求用户做一个选择（或者多选）。
 
-��UI�ĽǶ���˵��Alerts��������Ϊ��������Ļ��һ���ֵġ�Ư�����Ի�������ζ��Alerts��Ӧ�ñ�����һ���ǳ����ٵĲ�������������֤��С��app���ѣ����߿���ѡ�񡣸�����û�����Ӧ��ʹ��ȫ����Modals��
+从UI的角度来说，Alerts可以想象为覆盖在屏幕上一部分的“漂浮”对话框，这意味着Alerts不应该被用做一个非常快速的操作比如密码验证，小的app提醒，或者快速选择。更深的用户交互应该使用全屏的Modals。
 
-Alerts�ǳ���������ڶ��ơ�
+Alerts非常灵活且易于定制。
 
-������Ϣ��鿴API�ĵ���
+更多信息请查看API文档。
 
-#����ʹ��#
-������Alertsͨ�������������û��µ���Ϣ������app�еı仯���µ����Եȣ������û�֪��ĳ��������������������û�ĳ�������ĳɹ����
+#基本使用#
+基本的Alerts通常被用于提醒用户新的信息（比如app中的变化，新的特性等），让用户知道某个紧急情况，或者提醒用户某个操作的成功与否。
 
 import { AlertController } from 'ionic-angular';
 
@@ -27,7 +27,7 @@ export class MyPage {
 }
 
 #Prompt Alerts#
-Prompt�����������ݻ���Ϣ��Prompt�������������û�����һ������ǰ�������롣
+Prompt用于输入数据或信息，Prompt经常被用于让用户在下一步操作前输入密码。
 import { AlertController } from 'ionic-angular';
 
 export class MyPage {
@@ -64,7 +64,7 @@ export class MyPage {
 }
 
 #Confirmation Alerts#
-Confirmation Alerts��������app���ڽ�����һ������֮ǰ���û�׼ȷ��ȷ��һ��ѡ��һ�����͵����������û�ȷ���Ƿ�Ҫ�ӵ�ַ����ɾ����ϵ�ˡ�
+Confirmation Alerts常被用于app中在进行下一步操作之前让用户准确的确认一个选择。一个典型的例子是让用户确认是否要从地址簿中删除联系人。
 import { AlertController } from 'ionic-angular';
 
 export class MyPage {
@@ -95,7 +95,7 @@ export class MyPage {
 }
 
 #Radio#
-Radio Alerts�� Confirmation Alert��һ�֣����������û�����һЩѡ��ֻ��һ��ѡ���ܱ�ѡ�С�
+Radio Alerts是 Confirmation Alert的一种，但它会让用户进行一些选择，只有一个选项能被选中。
 
 import { AlertController } from 'ionic-angular';
 
@@ -127,7 +127,7 @@ export class MyPage {
 }
 
 #Checkbox#
-Checkbox Alerts��Confirmation Alert��һ�֣������ṩ���ѡ��ɱ���ѡ��
+Checkbox Alerts是Confirmation Alert的一种，它可提供多个选项。可被多选。
 import { AlertController } from 'ionic-angular';
 
 export class MyPage {
@@ -165,28 +165,28 @@ export class MyPage {
 }
 
 #Badges#
-Badges��һ��С����������������û�֪��һ����ֵ������������һ��item�С�
-������Ϣ��鿴API�ĵ���
-����ʹ�ã�
+Badges是一个小组件，常被用于让用户知晓一个数值。它常被用在一个item中。
+更多信息请查看API文档。
+基本使用：
 <ion-item>
   <ion-icon name="logo-twitter" item-left></ion-icon>
   Followers
   <ion-badge item-right>260k</ion-badge>
 </ion-item>
 
-BadgesҲ��������ɫ���ԣ�
+Badges也可设置颜色属性：
 <ion-badge color="secondary"></ion-badge>
 
 #Buttons#
-Buttons�ǹᴩ����app�е���Ҫ�Ľ�����ʽ�����û����ʱӦ������ȷ�Ľ�����Buttons��������ͼ������֣��ҿ���ͨ���ǳ������������ǿ��
+Buttons是贯穿整个app中的重要的交互方式，当用户点击时应该有明确的交互。Buttons可以设置图标和文字，且可以通过非常多的属性来加强。
 
-����˵��Buttons���ñ�׼��<button>��ǩ��ʵ�֣�������ʵ�Ѿ���ion-buttonָ������˼�ǿ��
+简单来说，Buttons可用标准的<button>标签来实现，但它其实已经被ion-button指令进行了加强。
 
-������Ϣ��鿴API�ĵ���
+更多信息请查看API文档。
 
-����ʹ�ã�
+基本使用：
 <button ion-button>Button</button>
-color���Կ�������button����ɫ��ionic���ö���Ĭ����ɫ���ҿ��Ժ����׵ĸ�д��
+color属性可以设置button的颜色，ionic内置多种默认颜色，且可以很容易的改写。
 <button ion-button color="light">Light</button>
 <button ion-button>Default</button>
 <button ion-button color="secondary">Secondary</button>
@@ -194,7 +194,7 @@ color���Կ�������button����ɫ��ionic���ö���Ĭ����ɫ���ҿ��Ժ����׵ĸ�д��
 <button ion-button color="dark">Dark</button>
 
 Outline Style
-Ҫʹ��Outline����Button����������Outline���ԣ�
+要使用Outline风格的Button，秩序添加Outline属性：
 <button ion-button color="light" outline>Light Outline</button>
 <button ion-button outline>Primary Outline</button>
 <button ion-button color="secondary" outline>Secondary Outline</button>
@@ -202,7 +202,7 @@ Outline Style
 <button ion-button color="dark" outline>Dark Outline</button>
 
 Clear Style
-Ҫʹ��Clear����Button����������Clear���ԣ�
+要使用Clear风格的Button，秩序添加Clear属性：
 <button ion-button color="light" clear>Light Clear</button>
 <button ion-button clear>Primary Clear</button>
 <button ion-button color="secondary" clear>Secondary Clear</button>
@@ -210,7 +210,7 @@ Clear Style
 <button ion-button color="dark" clear>Dark Clear</button>
 
 Round Buttons
-Ҫ����Բ�ǰ�ť��ֻ������round���ԣ�
+要创建圆角按钮，只需添加round属性：
 <button ion-button color="light" round>Light Round</button>
 <button ion-button round>Primary Round</button>
 <button ion-button color="secondary" round>Secondary Round</button>
@@ -218,21 +218,21 @@ Round Buttons
 <button ion-button color="dark" round>Dark Round</button>
 
 Block Buttons
-����block���Ի�ʹ��ť���Ⱥ��丸Ԫ����ȣ���������display:block���Ե���ť�ϣ�
+添加block属性会使按钮宽度和其父元素相等，它会添加display:block属性到按钮上：
 <button ion-button block>Block Button</button>
 
 Full Buttons
-����full���Ե�һ����ť�ϣ���ʹ��ť�ﵽ100%�丸Ԫ�صĿ��ȡ�Ȼ��Ҳ���Ƴ���ť�����ұ߿򡣵�һ����ť��Ҫ����������ȵ�ʱ�򣬿�����������ԡ�
+添加full属性到一个按钮上，会使按钮达到100%其父元素的宽度。然而也会移除按钮的左右边框。当一个按钮需要横跨整个宽度的时候，可以用这个属性。
 <button ion-button full>Full Button</button>
 
 Button Sizes
-����large���Կ�����һ����ť��ø��󣬻�������small����ʹ��ť��ø�С��
+添加large属性可以让一个按钮变得更大，或者添加small属性使按钮变得更小：
 <button ion-button small>Small</button>
 <button ion-button>Default</button>
 <button ion-button large>Large</button>
 
 Icon Buttons
-Ϊһ����ť����ͼ�꣬�����ڰ�ť��ʹ��icon���������������position���ԣ�
+为一个按钮添加图标，可以在按钮中使用icon组件，并可以设置position属性：
 <!-- Float the icon left -->
 <button ion-button icon-left>
   <ion-icon name="home"></ion-icon>
@@ -251,7 +251,7 @@ Icon Buttons
 </button>
 
 Buttons In Components
-���ܰ�ť���Ե���ʹ�ã���Ҳ���Ժ����׵������������ʹ�ã����磬��ť�������б����б�����ʹ�ã������ڵ�������ʹ�ã�
+尽管按钮可以单独使用，但也可以很容易的在其他组件中使用，比如，按钮可以在列表的列表项中使用，或者在导航栏中使用：
 <ion-header>
   <ion-navbar>
     <ion-buttons start>
