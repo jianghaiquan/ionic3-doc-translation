@@ -1,4 +1,4 @@
-Action Sheets
+### Action Sheets
 
 Action Sheets从设备屏幕底部边缘滑上来，显示一些有确认或取消功能的选项。Action Sheets可用来替代菜单，然后不要将它们作为导航使用。
 
@@ -6,7 +6,8 @@ ActionSheets总是出现在页面中其他组件之上，并且必须被隐藏�
 
 更多信息请查看API文档。
 
-#基本使用#
+### 基本使用
+```
 import { ActionSheetController } from 'ionic-angular';
 
 export class MyPage {
@@ -40,3 +41,4 @@ export class MyPage {
     actionSheet.present();
   }
 }
+```
