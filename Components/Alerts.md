@@ -10,7 +10,8 @@ Alerts非常灵活且易于定制。
 ### 基本使用
 基本的Alerts通常被用于提醒用户新的信息（比如app中的变化，新的特性等），让用户知道某个紧急情况，或者提醒用户某个操作的成功与否。
 
-```import { AlertController } from 'ionic-angular';
+```
+import { AlertController } from 'ionic-angular';
 
 export class MyPage {
   constructor(public alertCtrl: AlertController) {
@@ -24,7 +25,8 @@ export class MyPage {
     });
     alert.present();
   }
-}```
+}
+```
 
 #Prompt Alerts#
 Prompt用于输入数据或信息，Prompt经常被用于让用户在下一步操作前输入密码。
