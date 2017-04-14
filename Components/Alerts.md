@@ -1,4 +1,4 @@
-Alerts
+### Alerts
 如果要让用户选择一个操作或者从一列操作，Alerts是一种非常好的方式。它可以为用户提供重要的信息，或者要求用户做一个选择（或者多选）。
 
 从UI的角度来说，Alerts可以想象为覆盖在屏幕上一部分的“漂浮”对话框，这意味着Alerts不应该被用做一个非常快速的操作比如密码验证，小的app提醒，或者快速选择。更深的用户交互应该使用全屏的Modals。
@@ -7,10 +7,10 @@ Alerts非常灵活且易于定制。
 
 更多信息请查看API文档。
 
-#基本使用#
+### 基本使用
 基本的Alerts通常被用于提醒用户新的信息（比如app中的变化，新的特性等），让用户知道某个紧急情况，或者提醒用户某个操作的成功与否。
 
-import { AlertController } from 'ionic-angular';
+```import { AlertController } from 'ionic-angular';
 
 export class MyPage {
   constructor(public alertCtrl: AlertController) {
@@ -24,7 +24,7 @@ export class MyPage {
     });
     alert.present();
   }
-}
+}```
 
 #Prompt Alerts#
 Prompt用于输入数据或信息，Prompt经常被用于让用户在下一步操作前输入密码。
