@@ -5,11 +5,17 @@ Cards(卡片)是展示页面中一片重要区域的很好的方式，这样的�
 
 `其他内容`
 [Basic Cards](http://ionicframework.com/docs/components/#cards)
+
 [Card Headers](http://ionicframework.com/docs/components/#card-header)
+
 [Card Lists](http://ionicframework.com/docs/components/#card-list)
+
 [Card Images](http://ionicframework.com/docs/components/#card-image)
+
 [Background Images](http://ionicframework.com/docs/components/#card-background)
+
 [Advanced Cards](http://ionicframework.com/docs/components/#advanced-cards)
+
 
 #### 基本使用 ####
 Cards是一个基本的css组件。按照下面的方式来使用基本的cards:
