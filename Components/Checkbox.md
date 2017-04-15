@@ -3,3 +3,15 @@ checkbox是一个用来表示布尔值的输入组件。checkbox不同于html中的checkbox输入控件。
 
 更多信息请查看[API文档](http://ionicframework.com/docs/api/components/checkbox/Checkbox)。
 
+#### 基本使用
+```
+<ion-item>
+  <ion-label>Daenerys Targaryen</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Arya Stark</ion-label>
+  <ion-checkbox disabled="true"></ion-checkbox>
+</ion-item>
+```
