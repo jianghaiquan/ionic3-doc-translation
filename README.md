@@ -1,19 +1,16 @@
-# ionic3-doc-translation
+# ionic3官方文档翻译 #
 
 ----------
 
-ionic3官方文档翻译
-
-
-
-decadeheart正在翻译：
-
-Intro所有章节。
-
-cuijinyu正在翻译：
-
-API下的AlertController章节。
-
-tygm正在翻译：
-
-componnent的前10个小章节（overview至gesture）。
+### 正在翻译部分： ###
+| 翻译人 | 所属类别 | 章节 |
+|-----|------|-----|
+| decadeheart | Intro | 所有章节 |
+| cuijinyu | Api | AlertController章节 |
+| decadeheart | Intro | 所有章节 |
+| tygm | Componnent | 前10个小章节（overview至gesture） |
+| GitXiaoLei | Api | Tab章节 |
+### 已翻译完成部分 ###
+| 翻译人 | 所属类别 | 章节 |
+|-----|------|-----|
+...
