@@ -1,4 +1,4 @@
-### Tabs（选项卡） ###
+### Tabs（选项卡： tabs 是tab 的复数形式） ###
 
 ----------
 #### `ion-tabs` ####
@@ -113,3 +113,16 @@ Returns: `Tab`
 
 ### 输入属性 ###
 
+| 参数 | 类型 | 详述 |
+|-----|------|-----|
+| selectedIndex | `number`| 第一次加载的时候，默认选择设置了此属性的的索引。如果索引没有提供，将会使用 0,即第一个 tab |
+| tabsHighlight | `boolean`| 如果为true，在被选中的 tab 下面显示一个高亮的条 |
+| tabsLayout | `string`| 设置 tabbar 的布局：`ionic-top`,`icon-left`,`icon-right`,`icon-bottom`,`icon-hide`,`title-hide` |
+| tabsPlacement | `string`| 设置 tabbar 的位置：`top`,`bottom` |
+### 输出事件 ###
+| 参数 | 详述 |
+|-----|------|
+| ionChange | 当 tab 切换的时候触发 |
+
+### Sass 变量 ###
+[http://ionicframework.com/docs/api/components/tabs/Tabs/](http://ionicframework.com/docs/api/components/tabs/Tabs/)
