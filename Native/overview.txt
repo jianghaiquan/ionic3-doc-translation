@@ -1,0 +1,108 @@
+注：引入写法对于2.X有变化，现在将原来的ionic-native 拆分开来了例如->
+
+import{Camera} from "ionic-native" (2.X写法)-> import{Camera} from "@ionic-native/camera"
+
+
+Ionic Native is a TypeScript wrapper for Cordova/PhoneGap plugins that make adding any native functionality you need to your Ionic mobile app easy.
+ionic native(以下简称IN)是一个帮助你更简单的添加原生功能的Cordova/PhoneGap插件的TypeScript 封装
+
+Promises and Observables
+承诺与可观测处理
+
+Ionic Native wraps plugin callbacks in a Promise or an Observable, providing a common interface for all plugins and ensuring that native events trigger change
+detection in Angular 2.
+IN 使用承诺 或者延时处理来作为一个封装插件的回调，对于所有的插件都提供了公共接口，从而确保所有的原生事件触发后都能在ag2中被检测到
+
+/**例子**/
+
+//引入
+import { Geolocation } from '@ionic-native/geolocation';
+import { Platform } from 'ionic-angular';
+
+class MyComponentOrService {
+//构造
+  constructor(private platform: Platform, private geolocation: Geolocation) {
+
+    platform.ready().then(() => {
+//触发方法，然后回调
+      // get current position
+      geolocation.getCurrentPosition().then(pos => {
+        console.log('lat: ' + pos.coords.latitude + ', lon: ' + pos.coords.longitude);
+      });
+
+      const watch = geolocation.watchPosition().subscribe(pos => {
+        console.log('lat: ' + pos.coords.latitude + ', lon: ' + pos.coords.longitude);
+      });
+
+      // to stop watching
+      watch.unsubscribe();
+
+    });
+
+  }
+
+}
+
+Runtime Diagnostics
+执行时的判断
+
+Spent way too long diagnosing an issue only to realize a plugin wasn’t firing or installed? Ionic Native lets you know what the issue is and how you can resolve it.
+花了很长的时间来找BUG 然后才意识到原来是插件没有触发或者没安装？？？IN 教你找出问题的答案，和解决的方法
+
+Installation
+安装
+
+To add Ionic Native to your app, run following command to install the core package:
+使用如下的公共指令来安装IN插件到你的APP
+
+npm install @ionic-native/core --save
+例如 npm install  @ionic-native/camera --save （新版本，二者都行）
+或者 ionic plugin add cordova-plugin-camera （老版本，二者都行）
+
+Note that Ionic Native core package is included by default with every Ionic app.
+注意：一些核心的包在所有的IONIC APP里都 已经默认添加
+
+Usage
+用法
+
+Install the Needed Plugins
+安装需要的插件
+
+Install the Ionic Native package for each plugin you want to add.
+安装你需要的任何插件包
+
+For example, if you want to install the Camera plugin, you will need to run the following command:
+例如你想要安装调用和相机相关的插件
+
+npm install @ionic-native/camera --save
+Then install the plugin using Cordova or Ionic CLI.
+
+For example:
+
+ionic plugin add cordova-plugin-camera
+
+All package names are documented on the plugin’s documentation. It is recommended to follow the installation instructions on each plugin’s documentation, as some plugins require additional steps to fully install.
+所有的包名在插件的说明文档文件里都可以看到，在安装的时候推荐跟着安装说明做。比如有一些插件需要额外的步骤来完成整个插件的添加/（举个例子例如可能要修改android的配置文件或者config文件）
+
+Add Plugins to Your App's Module
+讲插件添加到你APP 模块里
+
+After installing a plugin’s package, add it to your app’s NgModule.
+安装完成之后 将插件添加到ngmodule中使用
+...
+
+import { Camera } from '@ionic-native/camera';
+
+...
+
+@NgModule({
+  ...
+
+  providers: [
+    ...
+    Camera
+    ...
+  ]
+  ...
+})
+export class AppModule { }
