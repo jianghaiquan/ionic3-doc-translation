@@ -13,4 +13,4 @@
 ### 已翻译完成部分 ###
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
-...
+| cuijinyu | Api | Actionsheet Controller章节 |
