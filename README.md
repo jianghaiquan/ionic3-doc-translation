@@ -13,3 +13,7 @@ Intro所有章节。
 cuijinyu正在翻译：
 
 API下的AlertController章节。
+
+tygm正在翻译：
+
+componnent的前10个小章节（overview至gesture）。
