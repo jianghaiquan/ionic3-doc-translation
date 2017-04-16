@@ -6,7 +6,7 @@
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
 | decadeheart | Intro | 所有章节 |
-| cuijinyu | Api | AlertController章节 |
+| cuijinyu | Api | App章节 |
 | decadeheart | Intro | 所有章节 |
 | tygm | Componnent | 前10个小章节（overview至gesture） |
 | GitXiaoLei | Api | Grid章节 |
@@ -16,3 +16,4 @@
 | cuijinyu | Api | Actionsheet Controller 章节 |
 | GitXiaoLei | Api | Tabs 章节 |
 | GitXiaoLei | Api | Tab 章节 |
+| cuijinyu | Api | AlertController章节 |
