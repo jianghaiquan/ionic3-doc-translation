@@ -1,7 +1,5 @@
 # ionic3官方文档翻译 #
 
-----------
-
 ### 有想加入翻译队伍的小伙伴们可以联系我（QQ304192604） ###
 
 ### 正在翻译部分： ###
@@ -11,9 +9,10 @@
 | cuijinyu | Api | AlertController章节 |
 | decadeheart | Intro | 所有章节 |
 | tygm | Componnent | 前10个小章节（overview至gesture） |
-| GitXiaoLei | Api | Tab章节 |
+| GitXiaoLei | Api | Grid章节 |
 ### 已翻译完成部分 ###
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
 | cuijinyu | Api | Actionsheet Controller 章节 |
 | GitXiaoLei | Api | Tabs 章节 |
+| GitXiaoLei | Api | Tab 章节 |
