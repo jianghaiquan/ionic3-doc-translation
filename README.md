@@ -10,6 +10,7 @@
 | decadeheart | Intro | 所有章节 |
 | tygm | Componnent | 前10个小章节（overview至gesture） |
 | GitXiaoLei | Api | Grid章节 |
+| qihao5316356 | native | 所有章节 |
 ### 已翻译完成部分 ###
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
@@ -17,4 +18,4 @@
 | GitXiaoLei | Api | Tabs 章节 |
 | GitXiaoLei | Api | Tab 章节 |
 | cuijinyu | Api | AlertController章节 |
-啊啊啊啊啊啊啊啊啊啊
+| qihao5316356 | native |overview,Browser-Usage,3d-touch |
