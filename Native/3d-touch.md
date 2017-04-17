@@ -212,7 +212,7 @@ That's where static icons come in, which need to be configured in your app's `.p
 
 所以有动态的，肯定就有静态啦 ，这里就要去修改你app的`.plist`文件，假设你想要这些事件
 
-<img src="screenshots/icon-action-2-static.jpg" width="360" height="223"/>
+<img src="https://github.com/EddyVerbruggen/cordova-plugin-3dtouch/raw/master/screenshots/icon-action-2-static.jpg" width="360" height="223"/>
 
 把这个加到你的 `.plist`里:
 
