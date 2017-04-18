@@ -11,11 +11,9 @@
 | tygm | Componnent | 前10个小章节（overview至gesture） |
 | GitXiaoLei | Api | Grid章节 |
 | qihao5316356 | native | 所有章节 |
-### 已翻译完成部分 ###
+### 已翻译完成部分： ###
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
-| cuijinyu | Api | Actionsheet Controller 章节 |
-| GitXiaoLei | Api | Tabs 章节 |
-| GitXiaoLei | Api | Tab 章节 |
-| cuijinyu | Api | AlertController章节 |
-| qihao5316356 | native |overview,Browser-Usage,3d-touch，action-sheet |
+| cuijinyu | Api | Actionsheet Controller,AlertController |
+| GitXiaoLei | Api | Tabs,Tab |
+| qihao5316356 | Native |overview,Browser-Usage,3d-touch，action-sheet |
