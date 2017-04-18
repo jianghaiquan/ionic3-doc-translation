@@ -18,4 +18,4 @@
 | GitXiaoLei | Api | Tabs 章节 |
 | GitXiaoLei | Api | Tab 章节 |
 | cuijinyu | Api | AlertController章节 |
-| qihao5316356 | native |overview,Browser-Usage,3d-touch |
+| qihao5316356 | native |overview,Browser-Usage,3d-touch，action-sheet |
