@@ -15,5 +15,5 @@
 | 翻译人 | 所属类别 | 章节 |
 |-----|------|-----|
 | cuijinyu | Api | Actionsheet Controller,AlertController |
-| GitXiaoLei | Api | Tabs,Tab |
+| GitXiaoLei | Api | Tabs,Tab，Typography |
 | qihao5316356 | Native |overview,Browser-Usage,3d-touch，action-sheet |
