@@ -1,2 +1,2 @@
-### zyt正在翻译： ###
-componnent的前10个小章节（overview至gesture）。
+### 已完成： ###
+componnent的前11个小章节（overview至grid）。
