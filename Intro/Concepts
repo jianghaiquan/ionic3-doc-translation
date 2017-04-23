@@ -1,0 +1,45 @@
+# 核心概念
+
+如果Ionic和移动应用程序开发，对于你来说是全新的话，对核心理念，概念和Ionic之后的工具有一个高层次的理解是很有帮助的。下面的概念可以帮助你熟悉Ionic是什么，理解它是怎么工作的。
+
+## Ionic和Ionic2展示
+
+![0](/home/decade/图片/0.jpg)
+
+什么是Ionic框架？
+
+Ionic框架是一个可以使开发者使用熟悉的web技术(HTML,CSS和JavaScript)来构建高性能，高质量移动应用的开源SDK。Ionic主要关注的是一个应用程序的外观和感觉或者UI交互。这意味着它不会取代PhoneGap(创建移动跨平台应用程序的快速开发平台)或者你喜欢的JavaScript框架。相反，Ionic适合这些项目，以简化应用程序开发过程中的一大部分：前端。查看["哪里适合Ionic框架"](http://blog.ionic.io/where-does-the-ionic-framework-fit-in/?_ga=1.116047887.828116509.1492140533)来对Ionic核心概念和目标有一个好的理解。
+
+Ionic现在需要Angular来充分发挥他的作用，虽然你仍然可以使用框架的css部分，但你会错过强大的UI交互，手势，动画和其他东西。未来，Ionic计划变得更加强大来支持更加广泛的JavaScript框架。
+
+## Ionic怎样授权？
+
+Ionic是完全免费和开源的，根据许可MIT许可证证发布，这意味着你能够在个人或者商业项目中免费使用Ionic。举个例子，MIT和像jQuery和Ruby on Rails这样受欢迎的项目使用相同的许可证。
+
+根据Apache 2许可证，本网站和本文档（在Ionic网站发现的）内容已经获得许可。
+
+## Ionic CLI是什么？
+
+CLI或者命令行借口，是提供很多有用的命令给Ionic开发者。除了安装和更新Ionic,CLI配有内置开发服务器，构建和调试工具，以及更多。如果你正在使用Ionic云，CLI可以用来上传代码甚至可以通过编程方式与你的账户进行交互。
+
+## 组件是什么？
+
+Ionic中的组件作为你手机应用程序的组成部分是可以重用的UI元素。组件是由HTML,CSS和一些JavaScript组成的。每一个Ionic组件都适用于你的应用程序运行的平台。我们称之为平台连续性而且更深入的了解它在主题中的作用。
+
+## 主题是什么？
+
+主题是应用到应用程序的一套风格。Ionic使用一款轻量自定义主题。但是它也自带一款黑色主题。除了主题，Ionic的平台连续性能够使组件有平台特定风格。这意味着应用程序的风格会基于正在运行它的平台（iOS，Android，etc），提供你的用户一个他们熟悉的体验。
+
+## 导航如何工作？
+
+导航像一个堆栈一样工作—将页面推送到堆栈来导航它，并弹出去。通过将他们推送到导航堆栈上，模式和警告都可以被展示。
+
+## 谁在Ionic背后？
+
+Ionic是被[@benjsperry](https://twitter.com/benjsperry),[@adamdbradley](https://twitter.com/adamdbradley)和[@maxlynch](https://twitter.com/maxlynch)开发的。在2013年11月发布一个alpha版本的Ionic之后，我们在2014年3月发布了一个1.0beta版，而且最终在2015年5月发布了1.0版本。
+
+现在，Ionic拥有一个开发者和贡献者推动其发展和采用的巨大的国际社区。大小公司正在使用Ionic来构建一个更好更快的应用程序。在2015年，Ionic开发者据说使用Ionic创造了超过1.3M的应用程序,并且这个数字每天都在增长。
+
+## Angular是什么
+
+Angular是支持Ionic的潜在框架。它负责作为Ionic构建块的组件API。有关Angular的概述，一定要查看[Angular的官方文档](https://angular.io/docs/ts/latest/)或者查看Ionic团队维护的[学习Angular2](http://learnangular2.com/)
